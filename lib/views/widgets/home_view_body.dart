@@ -12,7 +12,17 @@ class HomeViewBody extends StatelessWidget {
       child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(child: SizedBox(height: 16)),
-          CustomSliverGrid(),
+          SliverToBoxAdapter(
+            child: LayoutBuilder(
+              builder: (context, constrains) {
+                if (constrains.maxWidth > 600) {
+                  return Text("Tablet Layout");
+                } else {
+                  return CustomSliverGrid();
+                }
+              },
+            ),
+          ),
           CustomSliverListView(),
         ],
       ),

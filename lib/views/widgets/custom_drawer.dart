@@ -5,9 +5,9 @@ import 'custom_drawer_item.dart';
 import 'custom_drawer_items_list_view.dart';
 
 class CustomDrawer extends StatelessWidget {
-  CustomDrawer({super.key});
+  const CustomDrawer({super.key});
 
-  final List<DrawerItemModel> items = [
+  static final List<DrawerItemModel> items = [
     DrawerItemModel(icon: Icons.home, txt: 'D A S H B O A R D'),
     DrawerItemModel(icon: Icons.favorite, txt: 'F A V O R I T E'),
     DrawerItemModel(icon: Icons.info, txt: 'A B O U T'),
