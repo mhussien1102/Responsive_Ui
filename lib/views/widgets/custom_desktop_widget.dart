@@ -10,7 +10,8 @@ class CustomDesktopWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(child: CustomItem()),
+        Expanded(flex: 2, child: CustomItem()),
+        SizedBox(height: 16),
         Expanded(child: CustomItem2()),
       ],
     );
