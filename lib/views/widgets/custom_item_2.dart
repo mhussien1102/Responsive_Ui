@@ -8,7 +8,7 @@ class CustomItem2 extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 16),
       child: Container(
-        height: 65,
+        height: 80,
         decoration: BoxDecoration(
           color: Color(0xffECECEC),
           borderRadius: BorderRadius.circular(8),

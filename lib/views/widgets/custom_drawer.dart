@@ -21,7 +21,8 @@ class CustomDrawer extends StatelessWidget {
       elevation: 0,
       child: Column(
         children: [
-          DrawerHeader(child: Icon(Icons.favorite, size: 48)),
+          DrawerHeader(child: Icon(Icons.favorite, size: 56)),
+          SizedBox(height: 16),
           CustomDrawerItemsListView(items: items),
         ],
       ),
