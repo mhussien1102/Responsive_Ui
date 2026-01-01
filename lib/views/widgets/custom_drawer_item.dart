@@ -12,7 +12,11 @@ class CustomDrawerItem extends StatelessWidget {
       leading: Icon(drawerItemModel.icon),
       title: Padding(
         padding: const EdgeInsets.only(left: 16),
-        child: Text(drawerItemModel.txt),
+        child: FittedBox(
+          alignment: Alignment.centerLeft,
+          fit: BoxFit.scaleDown,
+          child: Text(drawerItemModel.txt),
+        ),
       ),
     );
   }
