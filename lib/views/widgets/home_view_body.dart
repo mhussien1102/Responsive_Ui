@@ -12,12 +12,13 @@ class HomeViewBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: LayoutBuilder(
         builder: (context, constrains) {
-          if (constrains.maxWidth > 900) {
-            return DesktopLayout();
-          } else if (constrains.maxWidth > 600 && constrains.maxWidth < 900) {
+          print("Layout builder width = ${constrains.maxWidth}");
+          if (constrains.maxWidth < 600) {
+            return MobileLayOut();
+          } else if (constrains.maxWidth < 900) {
             return TabletLayOut();
           } else {
-            return MobileLayOut();
+            return DesktopLayout();
           }
         },
       ),
